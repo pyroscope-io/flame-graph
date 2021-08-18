@@ -1,0 +1,24 @@
+{
+  "name": "@pyroscope/flame-graph",
+  "version": "0.1.0",
+  "description": "Pyroscope flamegraph rendering plugin",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc  --outDir build --esModuleInterop --allowJs --jsx react-jsx src/index.tsx src/*.ts && cp src/styles.css build/styles.css"
+  },
+  "keywords": [
+    "pyroscope",
+    "flamegraph"
+  ],
+  "author": "Pyroscope Inc.",
+  "license": "ISC",
+  "dependencies": {
+    "color": "3.2.1",
+    "react": "^17.0.2",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.2"
+  }
+}
